@@ -218,7 +218,7 @@ const Grmythancntstorriesquestn = () => {
         {grmythancntstorriesPhase === 'intro' ? (
           <View style={styles.grmythancntstorriesIntroWrap}>
             <LinearGradient
-              colors={['#060D08', '#0C1C12']}
+              colors={['rgb(2, 17, 6)', 'rgb(13, 33, 19)']}
               style={styles.grmythancntstorriesTopGradient}>
               <View style={styles.grmythancntstorriesTopBar}>
                 <View>
@@ -283,7 +283,7 @@ const Grmythancntstorriesquestn = () => {
         grmythancntstorriesCurrentQuestion ? (
           <View style={styles.grmythancntstorriesQWrap}>
             <LinearGradient
-              colors={['#1A3020', '#060D08']}
+              colors={['rgb(13, 33, 19)', 'rgb(2, 17, 6)']}
               style={styles.grmythancntstorriesTopGradient}>
               <View style={styles.grmythancntstorriesTopBar}>
                 <View>
@@ -376,7 +376,7 @@ const Grmythancntstorriesquestn = () => {
         {grmythancntstorriesPhase === 'result' ? (
           <View style={styles.grmythancntstorriesResultWrap}>
             <LinearGradient
-              colors={['#060D08', '#0C1C12']}
+              colors={['rgb(2, 17, 6)', 'rgb(13, 33, 19)']}
               style={styles.grmythancntstorriesTopGradient}>
               <View style={styles.grmythancntstorriesTopBar}>
                 <View>

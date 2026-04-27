@@ -97,7 +97,7 @@ const GrmythancntstorriesIcon = ({
 const grmythancntstorriesBarBackground = () => (
   <LinearGradient
     pointerEvents="none"
-    colors={['#060D08', '#060D08F2']}
+    colors={['rgb(13, 33, 19)', 'rgb(2, 17, 6)']}
     style={StyleSheet.absoluteFill}
   />
 );

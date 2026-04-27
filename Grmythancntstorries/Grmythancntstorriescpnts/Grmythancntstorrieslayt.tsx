@@ -1,5 +1,6 @@
 import React from 'react';
-import {ImageBackground, ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Grmythancntstorrieslayt = ({
   children,
@@ -10,8 +11,8 @@ const Grmythancntstorrieslayt = ({
   bounces?: boolean;
 }) => {
   return (
-    <ImageBackground
-      source={require('../../assets/i/grmythancntlay.png')}
+    <LinearGradient
+      colors={['rgb(10, 81, 38)', 'rgb(2, 24, 10)']}
       style={styles.grmythancntstorrieslaytcontainer}>
       <ScrollView
         bounces={bounces}
@@ -19,7 +20,7 @@ const Grmythancntstorrieslayt = ({
         showsVerticalScrollIndicator={false}>
         {children}
       </ScrollView>
-    </ImageBackground>
+    </LinearGradient>
   );
 };
 

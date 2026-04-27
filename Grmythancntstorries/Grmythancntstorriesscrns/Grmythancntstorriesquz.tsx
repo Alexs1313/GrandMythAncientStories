@@ -442,7 +442,7 @@ const Grmythancntstorriesquz = () => {
         {grmythancntstorriesPhase === 'intro' ? (
           <View style={styles.grmythancntstorriesIntroWrap}>
             <LinearGradient
-              colors={['#060D08', '#0C1C12']}
+              colors={['rgb(2, 17, 6)', 'rgb(13, 33, 19)']}
               style={styles.grmythancntstorriesTopGradient}>
               <View style={styles.grmythancntstorriesTopBar}>
                 <View>
@@ -454,7 +454,7 @@ const Grmythancntstorriesquz = () => {
             </LinearGradient>
             <View style={styles.grmythancntstorriesIntroContent}>
               <LinearGradient
-                colors={['#1A3020', '#060D08']}
+                colors={['rgb(13, 33, 19)', 'rgb(2, 17, 6)']}
                 style={styles.grmythancntstorriesBoltWrap}>
                 <View style={styles.grmythancntstorriesBoltCircle}>
                   <Image source={require('../../assets/i/grmythancbth.png')} />
@@ -510,7 +510,7 @@ const Grmythancntstorriesquz = () => {
         {grmythancntstorriesPhase === 'question' && grmythancntstorriesQ ? (
           <View style={styles.grmythancntstorriesQWrap}>
             <LinearGradient
-              colors={['#1A3020', '#060D08']}
+              colors={['rgb(13, 33, 19)', 'rgb(2, 17, 6)']}
               style={styles.grmythancntstorriesTopGradient}>
               <View style={styles.grmythancntstorriesTopBar}>
                 <View>

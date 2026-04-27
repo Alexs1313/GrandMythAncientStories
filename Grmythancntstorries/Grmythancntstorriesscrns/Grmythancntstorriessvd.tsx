@@ -55,7 +55,7 @@ const Grmythancntstorriessvd = () => {
   return (
     <Grmythancntstorrieslayt bounces={false}>
       <LinearGradient
-        colors={['#060D08', '#0C1C12']}
+        colors={['rgb(2, 17, 6)', 'rgb(13, 33, 19)']}
         style={styles.grmythancntstorriesHeaderBg}>
         <View style={styles.grmythancntstorriesTop}>
           <Text style={styles.grmythancntstorriesTitle}>FAVORITES</Text>

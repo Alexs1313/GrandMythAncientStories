@@ -64,8 +64,8 @@ const Grmythancntstorriesonb = () => {
   };
 
   return (
-    <ImageBackground
-      source={require('../../assets/i/grmythancntlay.png')}
+    <LinearGradient
+      colors={['rgb(10, 81, 38)', 'rgb(2, 24, 10)']}
       style={styles.grmythancntstorriesonbcontainer}>
       <ScrollView
         showsVerticalScrollIndicator={false}
@@ -117,7 +117,7 @@ const Grmythancntstorriesonb = () => {
           </TouchableOpacity>
         </View>
       </ScrollView>
-    </ImageBackground>
+    </LinearGradient>
   );
 };
 

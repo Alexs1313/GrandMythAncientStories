@@ -47,7 +47,9 @@ const Grmythancntstorriesstrs = () => {
 
   return (
     <Grmythancntstorrieslayt bounces={false}>
-      <LinearGradient colors={['#060D08', '#0C1C12']} style={{flex: 1}}>
+      <LinearGradient
+        colors={['rgb(2, 17, 6)', 'rgb(13, 33, 19)']}
+        style={{flex: 1}}>
         <View style={styles.grmythancntstorriesTop}>
           <Text style={styles.grmythancntstorriesTitle}>STORIES</Text>
 
