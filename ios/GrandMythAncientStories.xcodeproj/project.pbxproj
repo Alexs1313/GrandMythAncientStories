@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		0C80B921A6F3F58F76C31292 /* libPods-GrandMythAncientStories.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-GrandMythAncientStories.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		2DC3E142135B48CC9AD52098 /* Cinzel-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 33605FA04C274D10A0E93D75 /* Cinzel-Medium.ttf */; };
 		5237CA9BDB6B6DEAA1FC64A6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
+		59FEFE44229D4276B8AE8225 /* Cinzel-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55C0295AA0CA4C5FA1ACC566 /* Cinzel-SemiBold.ttf */; };
+		5F502693DE984901BCC3A63D /* Cinzel-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 30CE108B7B074436AB74DF6F /* Cinzel-ExtraBold.ttf */; };
 		761780ED2CA45674006654EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 761780EC2CA45674006654EE /* AppDelegate.swift */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		BA79A19E25CC41EEAD2BD6EF /* Cinzel-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 11FFEBC98DBE4812B38D1C2F /* Cinzel-Regular.ttf */; };
+		C14A67437748473199CA9E06 /* Cinzel-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 80D8DD4E59CF44C9B80D001A /* Cinzel-Black.ttf */; };
+		FCAE6AAF8BEF4BE99E970D70 /* Cinzel-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CBD44B621EA74C67A05D1099 /* Cinzel-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11FFEBC98DBE4812B38D1C2F /* Cinzel-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Regular.ttf"; path = "../assets/f/Cinzel-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* GrandMythAncientStories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrandMythAncientStories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = GrandMythAncientStories/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = GrandMythAncientStories/Info.plist; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = GrandMythAncientStories/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		30CE108B7B074436AB74DF6F /* Cinzel-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-ExtraBold.ttf"; path = "../assets/f/Cinzel-ExtraBold.ttf"; sourceTree = "<group>"; };
+		33605FA04C274D10A0E93D75 /* Cinzel-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Medium.ttf"; path = "../assets/f/Cinzel-Medium.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-GrandMythAncientStories.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrandMythAncientStories.debug.xcconfig"; path = "Target Support Files/Pods-GrandMythAncientStories/Pods-GrandMythAncientStories.debug.xcconfig"; sourceTree = "<group>"; };
+		55C0295AA0CA4C5FA1ACC566 /* Cinzel-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-SemiBold.ttf"; path = "../assets/f/Cinzel-SemiBold.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-GrandMythAncientStories.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GrandMythAncientStories.release.xcconfig"; path = "Target Support Files/Pods-GrandMythAncientStories/Pods-GrandMythAncientStories.release.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-GrandMythAncientStories.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GrandMythAncientStories.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		761780EC2CA45674006654EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = GrandMythAncientStories/AppDelegate.swift; sourceTree = "<group>"; };
+		80D8DD4E59CF44C9B80D001A /* Cinzel-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Black.ttf"; path = "../assets/f/Cinzel-Black.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = GrandMythAncientStories/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CBD44B621EA74C67A05D1099 /* Cinzel-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cinzel-Bold.ttf"; path = "../assets/f/Cinzel-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -75,6 +87,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				84C6DBDA4DCF404FAA0A82C1 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -87,6 +100,19 @@
 				13B07F961A680F5B00A75B9A /* GrandMythAncientStories.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		84C6DBDA4DCF404FAA0A82C1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				80D8DD4E59CF44C9B80D001A /* Cinzel-Black.ttf */,
+				CBD44B621EA74C67A05D1099 /* Cinzel-Bold.ttf */,
+				55C0295AA0CA4C5FA1ACC566 /* Cinzel-SemiBold.ttf */,
+				33605FA04C274D10A0E93D75 /* Cinzel-Medium.ttf */,
+				11FFEBC98DBE4812B38D1C2F /* Cinzel-Regular.ttf */,
+				30CE108B7B074436AB74DF6F /* Cinzel-ExtraBold.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		BBD78D7AC51CEA395F1C20DB /* Pods */ = {
@@ -161,6 +187,12 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				5237CA9BDB6B6DEAA1FC64A6 /* PrivacyInfo.xcprivacy in Resources */,
+				C14A67437748473199CA9E06 /* Cinzel-Black.ttf in Resources */,
+				FCAE6AAF8BEF4BE99E970D70 /* Cinzel-Bold.ttf in Resources */,
+				59FEFE44229D4276B8AE8225 /* Cinzel-SemiBold.ttf in Resources */,
+				2DC3E142135B48CC9AD52098 /* Cinzel-Medium.ttf in Resources */,
+				BA79A19E25CC41EEAD2BD6EF /* Cinzel-Regular.ttf in Resources */,
+				5F502693DE984901BCC3A63D /* Cinzel-ExtraBold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +223,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GrandMythAncientStories/Pods-GrandMythAncientStories-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GrandMythAncientStories/Pods-GrandMythAncientStories-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -230,9 +266,13 @@
 			inputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GrandMythAncientStories/Pods-GrandMythAncientStories-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
+			inputPaths = (
+			);
 			name = "[CP] Copy Pods Resources";
 			outputFileListPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GrandMythAncientStories/Pods-GrandMythAncientStories-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -273,7 +313,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjdldhf.khiqht;
 				PRODUCT_NAME = GrandMythAncientStories;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -300,7 +340,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gjdldhf.khiqht;
 				PRODUCT_NAME = GrandMythAncientStories;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -376,10 +416,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) DEBUG";
@@ -448,10 +485,7 @@
 					"-DFOLLY_CFG_NO_COROUTINES=1",
 					"-DFOLLY_HAVE_CLOCK_GETTIME=1",
 				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					" ",
-				);
+				OTHER_LDFLAGS = "$(inherited)  ";
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
 				USE_HERMES = true;
