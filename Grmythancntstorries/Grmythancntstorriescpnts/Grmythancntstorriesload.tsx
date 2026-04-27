@@ -5,81 +5,76 @@ import React, {useEffect} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import WebView from 'react-native-webview';
 
-const htmlloader = `<!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    overflow: hidden;
-  }
+const htmlloader = `  <!DOCTYPE html>
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+          body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: transparent;
+          }
 
-  body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+          .spinner {
+            width: 60px;
+            height: 60px;
+            position: relative;
+          }
 
-  .container {
-    --uib-size: 100px;
-    --uib-color: #5CCA40;
-    --uib-speed: 1.4s;
-    --uib-bg-opacity: 0.1;
-    height: var(--uib-size);
-    width: var(--uib-size);
-    transform-origin: center;
-    overflow: visible;
-  }
+          .spinner .dot {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            justify-content: center;
+            animation: spin 2s infinite linear;
+          }
 
-  .car {
-    fill: none;
-    stroke: var(--uib-color);
-    stroke-dasharray: 15, 85;
-    stroke-dashoffset: 0;
-    stroke-linecap: round;
-    animation: travel var(--uib-speed) linear infinite;
-  }
+          .spinner .dot::after {
+            content: "";
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background-color: rgb(12, 180, 231);
+          }
 
-  .track {
-    stroke: var(--uib-color);
-    opacity: var(--uib-bg-opacity);
-  }
+          @keyframes spin {
+            to {
+              transform: rotate(360deg);
+            }
+          }
 
-  @keyframes travel {
-    0% {
-      stroke-dashoffset: 0;
-    }
+          .spinner .dot:nth-child(2) {
+            animation-delay: 0.1s;
+          }
 
-    100% {
-      stroke-dashoffset: -100;
-    }
-  }
-</style>
-</head>
-<body>
-  <svg preserveAspectRatio="xMidYMid meet" viewBox="0 0 40 40" class="container">
-    <path
-      d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z"
-      pathLength="100"
-      stroke-width="4"
-      fill="none"
-      class="track"
-    />
-    <path
-      d="M29.760000000000005 18.72 c0 7.28 -3.9200000000000004 13.600000000000001 -9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.840000000000002 2.64 c -3.6 0 -6.88 -0.96 -9.76 -2.64 c0 -7.28 3.9200000000000004 -13.52 9.840000000000002 -16.96 c2.8800000000000003 -1.6800000000000002 6.24 -2.64 9.76 -2.64 S26.880000000000003 17.040000000000003 29.760000000000005 18.72 c5.84 3.3600000000000003 9.76 9.68 9.840000000000002 16.96 c -2.8800000000000003 1.6800000000000002 -6.24 2.64 -9.76 2.64 c -3.6 0 -6.88 -0.96 -9.840000000000002 -2.64 c -5.84 -3.3600000000000003 -9.76 -9.68 -9.76 -16.96 c0 -7.28 3.9200000000000004 -13.600000000000001 9.76 -16.96 C25.84 5.120000000000001 29.760000000000005 11.440000000000001 29.760000000000005 18.72z"
-      pathLength="100"
-      stroke-width="4"
-      fill="none"
-      class="car"
-    />
-  </svg>
-</body>
-</html>`;
+          .spinner .dot:nth-child(3) {
+            animation-delay: 0.2s;
+          }
+
+          .spinner .dot:nth-child(4) {
+            animation-delay: 0.3s;
+          }
+
+          .spinner .dot:nth-child(5) {
+            animation-delay: 0.4s;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="spinner">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </body>
+    </html>`;
 
 const Grmythancntstorriesload = () => {
   const grmythancntstorriesNavigation = useNavigation();
