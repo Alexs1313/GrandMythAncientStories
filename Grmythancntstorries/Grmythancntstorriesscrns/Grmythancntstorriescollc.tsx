@@ -1,3 +1,4 @@
+import {useFocusEffect} from '@react-navigation/native';
 import Grmythancntstorrieslayt from '../Grmythancntstorriescpnts/Grmythancntstorrieslayt';
 
 import AsyncStorage from '@react-native-async-storage/async-storage';
@@ -15,6 +16,7 @@ import {
 } from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
+import Orientation from 'react-native-orientation-locker';
 
 type GrmythancntstorriesHeroMythology = 'Greek Mythology' | 'Aztec Mythology';
 
@@ -185,6 +187,17 @@ const Grmythancntstorriescollc = () => {
       }
     },
     [],
+  );
+
+  useFocusEffect(
+    useCallback(() => {
+      if (Platform.OS === 'android' && !!grmythancntstorriesSelectedHero) {
+        Orientation.lockToPortrait();
+        return () => {
+          Orientation.unlockAllOrientations();
+        };
+      }
+    }, []),
   );
 
   const grmythancntstorriesIsUnlocked = useCallback(
