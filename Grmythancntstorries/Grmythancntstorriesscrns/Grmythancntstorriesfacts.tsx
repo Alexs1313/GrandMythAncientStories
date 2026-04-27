@@ -293,7 +293,7 @@ const styles = StyleSheet.create({
   },
 
   grmythancntstorriesTop: {
-    paddingTop: 64,
+    paddingTop: 65,
     paddingHorizontal: 18,
     padding: 20,
   },
